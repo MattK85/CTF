@@ -1,0 +1,19 @@
+Welcome.
+This is my CTF write up for the challenge of Unminfiy.
+This is an easy challenge to solve off PicoCTF.
+
+We are going to use the hints from the challenge to help us solve this problem. 
+One of those things are "I don't like scrolling down to read the code of my website, so I've squished it. 
+This right here made us go ahead and inspect element on the web page. 
+This gives all our HTML code in one line. Which we can scroll through and get the flag that way. But why not find faster was of doing this. 
+
+One of the ways we can solve it faster is simple using curl command. That would look like this
+curl -s titan.picoctf.net:64730 
+This will output something a little easier to read then just everything on one line. 
+We can find the flag there slightly faster then the last method
+
+We can also grep out flag that we are looking for. 
+Knowing the PicoCTF using the following syntax for flag picoCTF{. We can use that to our adavantage to highlight the flag so we dont have to through each line of code. 
+That would look like this 
+curl -s titan.picoctf.net:64730 | grep picoCTF{ 
+That will highlight our flag out of the list for us. 
