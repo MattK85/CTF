@@ -1,0 +1,23 @@
+Welcome. 
+
+This is how I solved the machine Unminify on picoCTF. 
+Couple of hints: INSPECT ELEMENT, CURL, GREP 
+
+Firstly after spinning up the machine we get a hint of "I don't like scrolling down to read the code of my website, so I've squished it." 
+On a quick inspect element of the page we notice that the code is all in one line. 
+Found a couple ways of solving this. 
+
+First way just going throught the inspect element and searching for the flag which, im too lazy to do myself so lets try to speed it up. 
+
+Second way:
+We can use the curl command to pull the html in our terminal. 
+The command will look like the follow:
+curl -s titan.picoctf.net/57277 
+This will move our HTML code to multiple lines and then see can once again go through and manually look for the flag. But im lazy so lets see the third method. 
+
+Third Way:
+We are going to use a combination of two commands: curl and grep. 
+We know picoctf flags start like this picoCTF{ so we are going to use this to our advantage. 
+That command is going to look like this:
+curl -s titan.picoctf.net/57277 | grep picoCTF{
+This will give the HTML code with the FLAG highlighted. 
