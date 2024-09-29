@@ -1,0 +1,34 @@
+Scavenger Hunt 
+
+Welcome
+This is how I solveled my Scavenger Hunt on PicoCTF
+
+Hint there is some intresting information hidden around this site 
+Inspecting element we find a part of a flag looks something like this picoCTT{t......
+We are going to copy that down 
+We gonna go ahead and click of the links inside the HTML code. 
+
+Going into mycss.css 
+We find the second part of the code.
+Going into myjs.js file we find the hint of how to i keep google from indexing my site. 
+We go ahead and view the /robots.txt file. 
+we get the next part of our code and then we notice that there is also another hint
+I think this is an apache server. Can you Access the next flag?
+Access is Capitilized so lets go ahead and check that file. 
+Using .htaccess file to get our next hint.
+It involves MAC and Storage... so using the .DS_STORE to access our last part of the flag. 
+
+To give you some information 
+
+/robots.txt has to do with web crawling. 
+
+/htaccess this files allows you to change to your website's config without changing the servers configuration files. 
+
+/.DS_STORE is Metadata file that Mac uses that store information about a folder and its icons. 
+
+Things I leanred here 
+/>DS_STORE 
+/.htaccess 
+
+
+
